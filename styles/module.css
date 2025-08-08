@@ -70,7 +70,11 @@ body {
 
 .message-metadata {
   color: #757575;
-  flex: 0 0 auto !important;
+  flex: 0 0 auto;}
+
+  .chat-message .message-header .flavor-text,
+.chat-message .message-header .whisper-to {
+  color: #757575;
 }
 
 .chat-portrait-flexrow {
