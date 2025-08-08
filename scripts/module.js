@@ -13,12 +13,3 @@ Hooks.on("renderChatMessage", (app, html, data) => {
     this.style.setProperty('--player-color', playerColor);
   });
 });
-
-// FVTT의 sidebar 배경색을 CSS 변수로 할당
-
-Hooks.once("ready", () => {
-  // FVTT에서 sidebar 배경색 가져오기 (예시: core 테마 설정)
-  // 실제 값은 테마에 따라 다를 수 있으니, 필요시 콘솔에서 확인
-  const sidebarBg = getComputedStyle(document.querySelector("#sidebar")).backgroundColor || "#2c2c2cde";
-  document.body.style.setProperty('--sidebar-background', sidebarBg);
-});

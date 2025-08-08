@@ -61,7 +61,7 @@ body {
   border: 0px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.08) !important;
   border-radius: 0px;
-  background: var(--sidebar-background,#2c2c2cde);
+  background: #2c2c2c; /* 기존 배경색 #2c2c2cde*/
 }
 
 .chat-portrait-text-size-name-generic, .message-sender {
@@ -74,7 +74,7 @@ body {
 }
 
 .chat-portrait-flexrow {
-  display: none;
+  display: none !important;
 }
 
 .chat-message .message-content {
