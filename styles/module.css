@@ -61,15 +61,12 @@ body {
   border: 0px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.08) !important;
   border-radius: 0px;
-  background: var(--sidebar-background);
+  background: var(--sidebar-background,#2c2c2cde);
 }
-
-/* 원래 색깔: #2c2c2cde */
 
 .chat-portrait-text-size-name-generic, .message-sender {
-  color: var(--player-color);
+  color: var(--player-color, #e7b1d1);
 }
-/* 원래 색깔: #e7b1d1 */
 
 .message-metadata {
   color: #757575;
