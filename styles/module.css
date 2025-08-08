@@ -1,0 +1,95 @@
+/* Font */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+@font-face {
+    font-family: 'NotoSerifKR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 폰트 변수 정의 */
+body {
+    --font-sans: "Pretendard Variable", Pretendard, "Signika", "Palatino Linotype", sans-serif;
+    --font-serif: "NotoSerifKR","Amiri", serif;
+    --font-h1: "RIDIBatang", "Modesto Condensed", serif;
+    --font-h2: "Pretendard Variable", Pretendard, "Signika", "Palatino Linotype", sans-serif;
+    --font-h3: "NotoSerifKR","Amiri", serif;
+    --font-h4: var(--font-h1);
+    --font-h5: var(--font-h2);
+    --font-h6: var(--font-h3);
+}
+
+/* h1~h6 폰트 오버라이드 */
+h1 {
+  font-family: var(--font-h1);
+}
+h2 {
+  font-family: var(--font-h2);
+}
+h3 {
+  font-family: var(--font-h3);
+}
+h4 {
+  font-family: var(--font-h4);
+}
+h5 {
+  font-family: var(--font-h5);
+}
+h6 {
+  font-family: var(--font-h6);
+}
+
+/* 바디 폰트 오버라이드 */
+body {
+  font-family: var(--font-sans);
+}
+
+/* 채팅 카드 스타일링 */
+.chat-message { 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 0px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 0px;
+  background: var(--sidebar-background);
+}
+
+/* 원래 색깔: #2c2c2cde */
+
+.chat-portrait-text-size-name-generic, .message-sender {
+  color: var(--player-color);
+}
+/* 원래 색깔: #e7b1d1 */
+
+.message-metadata {
+  color: #757575;
+  flex: 0 0 auto !important;
+}
+
+.chat-portrait-flexrow {
+  display: none;
+}
+
+.chat-message .message-content {
+  color: #FFFFFF;
+  margin-left: 42px;
+}
+
+/* 사이드바 활성 탭 버튼 튀어나오게 */
+#sidebar nav menu.flexcol {
+  align-items: end;
+}
+
+#sidebar nav menu.flexcol button.ui-control[aria-pressed=true] {
+    width: 50px;
+}
