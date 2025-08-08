@@ -90,3 +90,12 @@ body {
 #sidebar nav menu.flexcol button.ui-control[aria-pressed=true] {
     width: 50px;
 }
+
+#ui-right {
+  gap: 0;
+}
+
+/* 플레이리스트: 재생 중인 곡 배경 색 변경 */
+.directory-list .sound.playing {
+  background-image: linear-gradient(to right, #E44D26 0%, #F16529  30%, #16101a  100%);
+}
