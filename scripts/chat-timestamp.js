@@ -1,6 +1,6 @@
 // Settings
 Hooks.on("init", () => {
-    game.settings.register('chat-timestamp', 'showDate', {
+    game.settings.register('ccf-like-ui', 'showDate', {
         name: game.i18n.localize("CHAT_TIMESTAMP.showDate.name"),
         hint: game.i18n.localize("CHAT_TIMESTAMP.showDate.hint"),
         scope: 'client',
@@ -29,15 +29,15 @@ Hooks.once("init", async () => {
     Handlebars.registerHelper({chatTimeStamp: chatTimeStamp});
     Handlebars.registerHelper({chatDateStamp: chatDateStamp});
 
-    switch(game.settings.get('chat-timestamp', 'showDate')) {
+    switch(game.settings.get('ccf-like-ui', 'showDate')) {
         case "never": 
-             CONFIG.ChatMessage.template =  "modules/chat-timestamp/templates/sidebar/chat-message.html";
+             CONFIG.ChatMessage.template =  "modules/ccf-like-ui/templates/sidebar/chat-message.html";
              break;
         case "hover": 
-             CONFIG.ChatMessage.template =  "modules/chat-timestamp/templates/sidebar/chat-message-hover.html";
+             CONFIG.ChatMessage.template =  "modules/ccf-like-ui/templates/sidebar/chat-message-hover.html";
              break;
         case "always": 
-             CONFIG.ChatMessage.template =  "modules/chat-timestamp/templates/sidebar/chat-message-date.html";
+             CONFIG.ChatMessage.template =  "modules/ccf-like-uisss/templates/sidebar/chat-message-date.html";
              break;
         case "foundry":
              break;
