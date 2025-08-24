@@ -1,0 +1,8 @@
+{
+  "CHAT_TIMESTAMP.showDate.name":"날짜 보이기",
+  "CHAT_TIMESTAMP.showDate.hint":"타임스탬프에 날짜를 표시할까요?",
+  "CHAT_TIMESTAMP.showDate.never":"보이지 않음",
+  "CHAT_TIMESTAMP.showDate.always":"타임스탬프에 항상 표시",
+  "CHAT_TIMESTAMP.showDate.hover":"커서 올렸을 때",
+  "CHAT_TIMESTAMP.showDate.foundry":"파운드리 기본값"
+}

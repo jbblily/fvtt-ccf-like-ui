@@ -20,10 +20,27 @@
     "requires": []
   },
   "esmodules": [
-    "scripts/module.js"
+    "scripts/module.js", "scripts/chat-timestamp.js"
   ],
   "styles": [
-    "styles/module.css"
+    "styles/module.css", "styles/chattimestamp.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    },
+    {
+      "lang": "ko",
+      "name": "Korean",
+      "path": "lang/ko.json"
+    }
   ],
   "url": "#{URL}#",
   "manifest": "#{MANIFEST}#",

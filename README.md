@@ -16,6 +16,10 @@ CCF 스타일을 참고하여 채팅, 폰트, 플레이어 컬러 등 다양한 
   - 활성화된 사이드바 버튼이 튀어나와 도드라져서 보이게 함
   - 플레이리스트 재생 중인 곡의 배경에 색깔을 넣어줌
 
+- **채팅 타임스탬프 변경 기능**
+  - Credit: [Chat Message Timestamp 모듈](https://github.com/jsavko/chat-timestamp) 
+  - MIT 라이선스에 의해 13버전에 맞게 수정한 해당 모듈을 이 모듈 안에 삽입함
+
 ## 같이 사용할 것을 추천하는 모듈
 
   - Multiple Chat Tabs
