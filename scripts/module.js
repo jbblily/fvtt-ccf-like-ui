@@ -1,4 +1,4 @@
-// Foundry VTT의 renderChatMessage hook을 사용한 예시
+// 발화자 색깔을 플레이어 색깔로 변경하는 스크립트
 
 Hooks.on("renderChatMessage", (app, html, data) => {
   // 메시지의 userId 가져오기
