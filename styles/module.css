@@ -64,10 +64,6 @@ body {
   background: #2c2c2cde;
 }
 
-.chat-sidebar:not(.sidebar-popout) {
-  background: linear-gradient(to right, transparent  12.5px, rgba(11, 10, 19, 0.9)  12.5px);
-}
-
 .chat-portrait-text-size-name-generic, .message-sender {
   color: var(--player-color, #e7b1d1);
 }
@@ -76,7 +72,7 @@ body {
   color: #757575;
   flex: 0 0 auto;}
 
-  .chat-message .message-header .flavor-text,
+.chat-message .message-header .flavor-text,
 .chat-message .message-header .whisper-to {
   color: #757575;
 }
@@ -101,6 +97,11 @@ body {
 
 #ui-right {
   gap: 0;
+}
+
+/* 채팅탭 사이드바 배경 색상 검정색으로 */
+.chat-sidebar:not(.sidebar-popout) {
+  background: linear-gradient(to right, transparent  12.5px, rgba(11, 10, 19, 0.9)  12.5px);
 }
 
 /* 플레이리스트: 재생 중인 곡 배경 색 변경 */
